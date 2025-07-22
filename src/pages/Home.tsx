@@ -10,7 +10,7 @@ interface HomeProps {
 
 export default function Home({} : HomeProps) : JSX.Element{
     return (
-        <>
+        <div >
         
             <Title path={titre} title="Whats up ?!" />
         
@@ -38,6 +38,6 @@ export default function Home({} : HomeProps) : JSX.Element{
                 </div>
 
             </div>
-        </>
+        </div>
     );
 }
