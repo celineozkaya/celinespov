@@ -25,17 +25,12 @@ export default function Navbar() : JSX.Element {
                 </div>
             </div>
 
-
             {/* burger button */}
             <div className={styles.burger} onClick={toggleMenu}>
                 <div className={styles.burgerLine}></div>
                 <div className={styles.burgerLine}></div>
                 <div className={styles.burgerLine}></div>
             </div>
-
-
-
-
         </nav>
     );
 };
