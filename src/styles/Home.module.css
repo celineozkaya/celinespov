@@ -1,15 +1,41 @@
 .txt{
     height: 30%;
-    width: 30%;
+    width: 40%;
     text-align: justify;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+.topcontent{
+    display: flex;
+    gap : 20px;
+}
+
+.bottomcontent{
+    display: flex;
+    justify-content: center;
+
+}
+
 .img{
-    height:20%
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.iframe{
+/* sur mobile*/
+@media (max-width: 1000px) {
+    .topcontent {
+        flex-direction: column; 
+        gap : 10px;
 
+    }
+
+    .txt {
+        width: 100%;
+    }    
 }
-

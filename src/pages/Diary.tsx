@@ -1,6 +1,7 @@
 import type { JSX } from "react";
-import Title from "../components/Title";
-import titleImg from "../assets/thediary.svg";
+import React from 'react';
+import Title from '../components/Title';
+import titleImg from '../assets/thedirary.png'
 
 interface DiaryProps{
 
@@ -9,7 +10,7 @@ interface DiaryProps{
 export default function Diary({} : DiaryProps) : JSX.Element {
     return (
         <div>
-            {/* <Title path={titleImg} title="The Diary"/> */}
+            <Title path={titleImg} title="The Diary" />
         </div>
     );
 }

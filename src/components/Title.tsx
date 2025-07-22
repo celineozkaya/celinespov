@@ -8,7 +8,7 @@ interface TitleProps{
 export default function Title({title, path} : TitleProps) :JSX.Element {
     return (
         <div>
-            <img src={path} alt={title} style={{height: "30px"}}/>
+            <img src={path} alt={title} className={styles.title}/>
         </div>
     );
 }

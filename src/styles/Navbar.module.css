@@ -30,3 +30,73 @@
     display: flex;
     justify-content: space-around;
 }
+
+/* burger button */
+.burger {
+    display: none; /* Cacher sur desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burgerLine {
+    width: 25px;
+    height: 3px;
+    background-color: #8A849A;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.close {
+    display: none;
+}
+  
+
+
+/* version mobile */
+@media (max-width: 800px) {
+    .nav{
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: flex; /* afficher le burger button sur mobile */
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #2B2733;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%); /* cacher le menu par défaut */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu.open{
+        transform: translateX(0); /* afficher le menu quand l'état est "open" */
+    }
+
+    .menu.open .close{
+        display: flex; /* Affiche la croix seulement quand menu est ouvert */
+        position : absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .link {
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight:900;
+
+    }
+
+    .close img {
+        height: 30px;
+    }
+}
